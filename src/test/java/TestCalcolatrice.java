@@ -3,10 +3,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-class TestCalcolatrice 
+public class TestCalcolatrice 
 {
 	@Test
-	void testSomma() 
+	public void testSomma() 
 	{	
 		Calcolatrice c = new Calcolatrice();
 		
@@ -15,7 +15,7 @@ class TestCalcolatrice
 		Assert.assertEquals(11, res, 0);
 	}
 	@Test
-	void testSomma2() 
+	public void testSomma2() 
 	{
 		Calcolatrice c = new Calcolatrice();
 		
