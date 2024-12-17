@@ -34,10 +34,15 @@ public class Calcolatrice
 		}
 		return s;
 	}
-	public double divisione(double divisore, double dividendo)
+	
+	public double divisione(double divisore, double dividendo) throws Exception
 	{
 		double ris;
 		ris = divisore/dividendo;
+		if(dividendo==0)
+		{
+			throw new Exception();
+		}
 		return ris;
 	}
 }

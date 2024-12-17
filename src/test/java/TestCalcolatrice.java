@@ -86,7 +86,7 @@ public class TestCalcolatrice
 		assertEquals(-30, res);
 	}
 	@Test
-	public void testDiv() 
+	public void testDiv()  throws Exception 
 	{	
 		Calcolatrice c = new Calcolatrice();
 		
@@ -95,7 +95,7 @@ public class TestCalcolatrice
 		assertEquals(1, res);
 	}
 	@Test
-	public void testDiv2() 
+	public void testDiv2()  throws Exception 
 	{	
 		Calcolatrice c = new Calcolatrice();
 		
@@ -104,7 +104,7 @@ public class TestCalcolatrice
 		assertEquals(5, res);
 	}
 	@Test
-	public void testDivNeg() 
+	public void testDivNeg()  throws Exception 
 	{	
 		Calcolatrice c = new Calcolatrice();
 		
@@ -114,13 +114,31 @@ public class TestCalcolatrice
 	}
 	
 	@Test
-	public void testDiv3() 
+	public void testDiv3()  throws Exception 
 	{	
 		Calcolatrice c = new Calcolatrice();
 		
 		double res =  c.divisione(-5,10);
 		
 		assertNotEquals(82, res);
+	}
+	@Test
+	public void testDiv0() throws Exception 
+	{	
+		Calcolatrice c = new Calcolatrice();
+		
+		try
+		{
+			double res =  c.divisione(5,0);
+			assertEquals(null, res);
+		}
+		catch(Exception e)
+		{
+			System.out.println("impossibile div per 0");
+			
+		}
+		
+		
 	}
 }
 
