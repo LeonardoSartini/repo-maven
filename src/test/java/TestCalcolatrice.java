@@ -1,9 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Assert;
-
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
 
 public class TestCalcolatrice
 {
@@ -14,7 +11,7 @@ public class TestCalcolatrice
 		
 		double res =  c.somma(5,6);
 		
-		Assert.assertEquals(11, res, 0);
+		assertEquals(11, res);
 	}
 	@Test
 	public void testSomma2() 
@@ -23,7 +20,16 @@ public class TestCalcolatrice
 		
 		double res =  c.somma(6,6);
 		
-		Assert.assertEquals(11, res, 0);
+		assertEquals(11, res);
+	}
+	@Test
+	public void testSommaNegativo() 
+	{
+		Calcolatrice c = new Calcolatrice();
+		
+		double res =  c.somma(10,-5);
+		
+		assertEquals(10, res);
 	}
 }
 
