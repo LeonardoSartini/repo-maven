@@ -113,6 +113,15 @@ public class TestCalcolatrice
 		assertEquals(-0.5, res);
 	}
 	
+	@Test
+	public void testDiv3() 
+	{	
+		Calcolatrice c = new Calcolatrice();
+		
+		double res =  c.divisione(-5,10);
+		
+		assertNotEquals(82, res);
+	}
 }
 
 
