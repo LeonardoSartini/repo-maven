@@ -10,4 +10,34 @@ public class Calcolatrice
 		}
 		return s;
 	}
+	public double sottrazione(double n1, double n2)
+	{
+		double ris;
+		ris = n1-n2;
+		return ris;
+	}
+//	public double sott(double...addendi)
+//	{
+//		double s=0;
+//		for(double addendo:addendi)
+//		{
+//			s=addendo-s;
+//		}
+//		return s;
+//	}
+	public double moltiplicazione(double...moltiplicandi)
+	{
+		double s=1;
+		for(double moltiplicando:moltiplicandi)
+		{
+			s=s*moltiplicando;
+		}
+		return s;
+	}
+	public double divisione(double divisore, double dividendo)
+	{
+		double ris;
+		ris = divisore/dividendo;
+		return ris;
+	}
 }
