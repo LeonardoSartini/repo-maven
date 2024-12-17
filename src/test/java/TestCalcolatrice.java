@@ -20,7 +20,7 @@ public class TestCalcolatrice
 		
 		double res =  c.somma(6,6);
 		
-		assertEquals(11, res);
+		assertEquals(12, res);
 	}
 	@Test
 	public void testSommaNegativo() 
@@ -29,7 +29,7 @@ public class TestCalcolatrice
 		
 		double res =  c.somma(10,-5);
 		
-		assertEquals(10, res);
+		assertEquals(5, res);
 	}
 }
 
