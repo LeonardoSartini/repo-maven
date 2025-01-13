@@ -22,6 +22,7 @@ public class Calcolatrice
 		}
 		return s;
 	}
+<<<<<<< HEAD
 	
 	public double differenza (double d1, double d2)
 	{
@@ -29,6 +30,23 @@ public class Calcolatrice
 		diff = d1-d2;
 		return diff;
 	}
+=======
+	public double sottrazione(double n1, double n2)
+	{
+		double ris;
+		ris = n1-n2;
+		return ris;
+	}
+//	public double sott(double...addendi)
+//	{
+//		double s=0;
+//		for(double addendo:addendi)
+//		{
+//			s=addendo-s;
+//		}
+//		return s;
+//	}
+>>>>>>> caa7e3d5ec2396e6f96bf9751c43088828449cb3
 	public double moltiplicazione(double...moltiplicandi)
 	{
 		double s=1;
