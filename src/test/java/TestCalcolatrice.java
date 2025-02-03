@@ -2,13 +2,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-<<<<<<< HEAD
 public class TestCalcolatrice {
 
-=======
 public class TestCalcolatrice
 {
->>>>>>> caa7e3d5ec2396e6f96bf9751c43088828449cb3
 	@Test
 	public void testSomma()
 
