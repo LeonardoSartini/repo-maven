@@ -5,5 +5,6 @@ public class Start {
 		
 		System.out.println("ciao");
 		System.out.println("ciao");
+		System.out.println("ciao3");
 	}
 }

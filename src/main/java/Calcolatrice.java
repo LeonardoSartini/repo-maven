@@ -6,10 +6,31 @@ public class Calcolatrice
 		double s=0;
 		for(double addendo:addendi)
 		{
-			s=s+addendo;
+			if(addendo < 0)
+			{
+				System.out.println("addendo negativo");
+			}
+			if(addendo == 0)
+			{
+				System.out.println("addendo : 0");
+			}
+			if(addendo > 0)
+			{
+				System.out.println("addendo è positivo");
+			}
+			s=s+ addendo;
 		}
 		return s;
 	}
+<<<<<<< HEAD
+	
+	public double differenza (double d1, double d2)
+	{
+		double diff=0;
+		diff = d1-d2;
+		return diff;
+	}
+=======
 	public double sottrazione(double n1, double n2)
 	{
 		double ris;
@@ -25,6 +46,7 @@ public class Calcolatrice
 //		}
 //		return s;
 //	}
+>>>>>>> caa7e3d5ec2396e6f96bf9751c43088828449cb3
 	public double moltiplicazione(double...moltiplicandi)
 	{
 		double s=1;
