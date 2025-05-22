@@ -137,6 +137,40 @@ public class TestCalcolatrice
 			System.out.println("impossibile div per 0");
 			
 		}
+	}
+	@Test
+	public void testDiv01() throws Exception 
+	{	
+		Calcolatrice c = new Calcolatrice();
+		
+		try
+		{
+			double res =  c.divisione(5,0);
+			assertEquals(-2, res);
+		}
+		catch(Exception e)
+		{
+			System.out.println("impossibile div per 0");
+			
+		}
+		
+		
+	}
+	@Test
+	public void testDiv02() throws Exception 
+	{	
+		Calcolatrice c = new Calcolatrice();
+		
+		try
+		{
+			double res =  c.divisione(5,0);
+			assertEquals(23, res);
+		}
+		catch(Exception e)
+		{
+			System.out.println("impossibile div per 0");
+			
+		}
 		
 		
 	}
